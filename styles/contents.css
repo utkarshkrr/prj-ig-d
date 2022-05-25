@@ -1,0 +1,263 @@
+  .contents{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: default;
+  }
+    .stories{
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+      width: 540px;
+      overflow: auto;
+      overflow-x: hidden;
+      margin: 10px 5px ;
+    }
+      .story-container{
+        padding: 0px 6.2px;
+      }
+        .story{
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+        }
+          .story-ring{
+            height: 60px;
+            width: 60px;
+            margin-bottom: 5px;
+            cursor: pointer;
+          }
+          .story-pic{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            position: absolute;
+            bottom: 10px;
+            cursor: pointer;
+          }
+        .story-name{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 15px;
+          font-weight: 300;
+          color: gray;
+        }
+    .more{
+      position: absolute;
+      right:2px;
+      height: 20px;
+      bottom: 50px;
+      width: 20px;
+      border-radius: 20px;
+      background-color: rgba(255,255,255,0.5);
+      cursor: pointer;
+    }
+      .more-arrow{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 50%;
+      }
+        .more-arrow:hover{
+          background-color: rgba(255,255,255,0.75);
+        }
+
+
+  .post{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    width: 560px;
+    margin: 7px 5px;
+    border-radius: 5px;
+  }
+    .post-header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      border-width: 0px 0px 1px 0px;
+      border-style: solid;
+    }
+      .profile{
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+      }
+        .post-profile-pic{
+          height: 35px;
+          width: 35px;
+        }
+          .post-profile-pic-img{
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            object-fit: cover;
+          }
+        .post-profile-name{
+          margin-left: 15px;
+          font-weight: 500;
+          cursor: pointer;
+        }
+          .post-profile-name:hover{
+            text-decoration: underline;
+          }
+      .post-header-actions{
+        height: 25px;
+        width: 25px;
+        padding: 0px 10px;
+        opacity: 0.9;
+        cursor: pointer;
+      }
+        .post-header-actions-img{
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+    .post-content{
+      height: 560px;
+      width: 560px;
+      border-width: 0px 0px 1px 0px;
+      border-style: solid;
+    }
+      .post-content-img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    .post-reactions{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 15px 10px 10px 10px;
+    }
+      .post-reaction{
+        display: flex;
+        align-items: center;
+      }
+        .post-reaction-icon{
+          height: 25px;
+          width: 25px;
+          border-radius: 20px;
+          align-items: center;
+          justify-content: center;
+          padding: 0px 5px;
+          object-fit: f;
+        }
+          .post-reaction-icon-img{
+            height: 100%;
+            width: 100%;
+            cursor: pointer;
+          }
+    .post-stats{
+      display: flex;
+      align-items: center;
+      padding: 10px 15px;
+      font-weight: 300;
+      font-size: 15px;
+    }
+      .post-reactors{
+        display: flex;
+        align-items: center;
+      }
+        .post-reactors-img{
+          height: 20px;
+          width: 20px;
+          border-radius: 20px;
+          margin-right: 10px;
+          cursor: pointer;
+        }
+      .post-reactor,
+      .author{
+      font-weight: 500;
+      margin: 0px 5px;
+      cursor: pointer;
+      }
+        .post-reactor:hover,
+        .author:hover{
+          text-decoration: underline;
+        }
+    .post-caption{
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      font-weight: 300;
+    }
+    .view-comments{
+      padding: 5px 15px;
+      font-size: 14px;
+      font-weight: 300;
+      color: gray;
+      cursor: pointer;
+    }
+    .comments-container{
+      display: flex;
+      flex-direction: column;
+    }
+      .comments{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+        .comment{
+          display: flex;
+          align-items: center;
+          padding: 3px 10px;
+        }
+          .comment-txt{
+            font-weight: 300;
+            cursor: text;
+          }
+      .like-comment{
+        height: 12px;
+        width: 12px;
+        margin: 0px 15px;
+      }
+    .time{
+      padding: 5px 15px;
+      font-size: 10px;
+      font-weight: 300;
+      color: gray;
+    }
+    .add-comment-section{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px;
+      height: 35px;
+      }
+        .add-comment{
+          display: flex;
+          align-items: center;
+        }
+        .add-comment-icon{
+          display: flex;
+          height: 30px;
+          width: 30px;
+          margin-right: 10px;
+        }
+          .add-comment-icon-img{
+            height: 100%;
+            width: 100%;
+          }
+        .add-comment-bar{
+          border:none;
+          outline: none;
+          background-color: white;
+          padding: 10px;
+          font-size: 15px;
+          color: gray;
+          font-weight: 100;
+        }
+        .post-comment{
+          font-size: 15px;
+          font-weight: 500;
+          color: rgb(72, 154, 249);
+          cursor: pointer;
+        }

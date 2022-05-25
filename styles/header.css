@@ -1,0 +1,123 @@
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  padding: 5x 20px;
+  font-family: Roboto, Arial;
+  background-color: white;
+  box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+  cursor: default;
+  z-index: 100;
+}
+  .header-left{
+    padding: 0px 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+    .instagram-logo{
+      height: 35px;
+      width: 105px;
+    }
+      .instagram-logo-img{
+        margin: 5px;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+
+
+  .header-mid{
+    padding: 0px 25px;
+    flex: 1;
+  }
+    .insta-search{
+      display: flex;
+      flex: 1;
+      align-items: center;
+      justify-content: center;
+    }
+      .insta-search-icon{
+        height: 20px;
+        width: 20px;
+        object-fit: cover;
+        opacity: 0.35;
+        margin-right: -80px;
+      }
+      .insta-search-bar{
+        flex: 1;
+        width: 0;
+        max-width: 250px;
+        padding: 7px 20px 7px 30px;
+        border: none;
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 7px;
+        font-size: 18px;
+        font-weight: 100;
+        margin-left: 50px;
+      }
+
+
+  .header-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 25px;
+  }
+    .header-toggles{
+      display: flex;
+      padding: 5px;
+    }
+      .header-toggle,
+      .profile-pic{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        object-fit: cover;
+        height: 25px;
+        width: 25px;
+        margin: 5px 10px;
+      }
+        .header-toggle-img,
+        .profile-pic-img{
+          height: 100%;
+          width: 100%;
+          cursor: pointer;
+        }
+        .profile-pic{
+          margin: 5px 10px;
+        }
+        .profile-pic-img{
+          border-radius: 50%;
+        }
+
+@media(max-width:750px){
+  .header-left{
+    margin: 0;
+  }
+  .header-right{
+    margin-right: 0;
+  }
+}
+@media(min-width:751px),(max-width:999px){
+  .header-left{
+    margin-left: 50px;
+  }
+  .header-right{
+    margin-right: 75px;
+  }
+}
+@media(min-width:1000px){
+  .header-left{
+    margin-left: 250px;
+  }
+  .header-right{
+    margin-right: 270px;
+  }
+}

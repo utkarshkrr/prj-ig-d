@@ -1,0 +1,19 @@
+body{
+  margin-bottom: 50px;
+  font-family: Roboto, Arial;
+}
+main{
+  display: flex;
+  margin-top: 80px;
+  padding: 10px;
+  justify-content: center;
+}
+
+.disclaimer{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+}
