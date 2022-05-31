@@ -147,7 +147,7 @@
 
 
 
-@media(max-width:999px){
+@media(max-width:1499px){
   .right-bar{
     position: fixed;
     pointer-events: none;
